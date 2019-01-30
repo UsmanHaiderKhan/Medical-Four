@@ -12,8 +12,9 @@
     <link href="assets/Bootstrap4/css/owl.theme.default.min.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/css/slick.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/css/slick-theme.css" rel="stylesheet" />
+    <link href="assets/Bootstrap4/css/calendar.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/css/jquery-ui.css" rel="stylesheet" />
-    <link href="assets/my-icons-collection_3/font/flaticon.css" rel="stylesheet" />
+    <link href="assets/my-icons-collection_5/font/flaticon.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/css/styles.css" rel="stylesheet" />
     <title>Medical Theme | Four</title>
 </head>
@@ -65,26 +66,26 @@
                         <a class="nav-link active scroll" href="#HOME">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="#welcome">About</a>
+                        <a class="nav-link scroll" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="#services">Services</a>
+                        <a class="nav-link scroll" href="#service">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="#gallery">Gallery</a>
+                        <a class="nav-link scroll" href="#gallery-pic">Gallery</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link scroll" href="#team">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="#touch">Contact</a>
+                        <a class="nav-link scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
                 <div class="nav-item media-align">
-                    <i class="flaticon-facebook-letter-logo social-circle"></i>
-                    <i class="flaticon-twitter-logo-silhouette social-circle"></i>
-                    <i class="flaticon-google-plus-symbol social-circle"></i>
-                    <i class="flaticon-linkedin-logo social-circle"></i>
+                    <a href="" class="link-blue"><i class="flaticon-facebook-letter-logo social-circle"></i></a>
+                    <a href="" class="link-blue"><i class="flaticon-twitter-logo-silhouette social-circle"></i></a>
+                    <a href="" class="link-blue"><i class="flaticon-google-plus-logo social-circle"></i></a>
+                    <a href="" class="link-blue"><i class="flaticon-linkedin-logo social-circle"></i></a>
                 </div>
             </div>
         </div>
@@ -302,15 +303,17 @@
         </div>
     </section>
     <section id="contact-info" class="mt-110">
-        <div class="row">
+        <div class="row text-center">
             <div class="col-md-8 offset-md-2">
-                <h2 class="dis-text mt-34">Call Now and Get the 20% Discount</h2>
-                <p class="no-color mt-27">
-                    +1 (810) 456 7899
-                </p>
-                <p class="bg-white-color">
-                    <img src="assets/Images/phone.png" />
-                </p>
+                <div class="border-info ">
+                    <h2 class="dis-text mt-34">Call Now and Get the 20% Discount</h2>
+                    <p class="no-color mt-27">
+                        +1 (810) 456 7899
+                    </p>
+                    <p class="bg-white-color">
+                        <img src="assets/Images/phone.png" />
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -323,15 +326,15 @@
                 <div class="col-lg-6">
                     <p class="work-text">our work</p>
                     <h2 class="below-After after-gallery-text">Before & After Gallery</h2>
-                    <p class="gallery-desc mt-30">
+                    <p class="gallery-desc mt-35">
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat .
                     </p>
                     <p class="gallery-text-desc">
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
-                        Tincidunt integer eu augue augue nunc elit dolor.
+                        Tincidunt integer eu augue augue nunc elit dolor augue augue nunc elit dolor augue augue nunc elit dolor.
                         <br /><br />
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
-                        Tincidunt integer eu augue augue nunc elit dolor.
+                        Tincidunt integer eu augue augue nunc elit dolor augue augue nunc elit dolor augue augue nunc elit dolor.
                     </p>
                     <div>
                         <a href class="btn btn-view-gallery btn-r-0">View Gallery</a>
@@ -376,9 +379,240 @@
                     <h2 class="appoint-text below-customer">Make an Appointment</h2>
                 </div>
             </div>
+            <div id="cal">
+                <div class="header">
+                    <span class="left button" id="prev"><i class="flaticon-left-arrow"></i> </span>
+                    <!--<span class="left hook"></span>-->
+                    <span class="month-year" id="label"> December 2018 </span>
+                    <!--<span class="right hook" id=""></span>-->
+                    <span class="right button" id="next"><i class="flaticon-right-arrow"></i> </span>
+                </div>
+                <table id="days">
+                    <tr class="row-bg">
+                        <td>sun</td>
+                        <td>mon</td>
+                        <td>tue</td>
+                        <td>wed</td>
+                        <td>thu</td>
+                        <td>fri</td>
+                        <td>sat</td>
+                    </tr>
+                </table>
+                <div id="cal-frame">
+                    <table class="curr">
+                        <tr>
+                            <td class="nil"></td>
+                            <td class="nil"></td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td class="today">11</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td class="nil"></td>
+                            <td class="nil"></td>
+                            <td class="nil"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Appointments -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="appoint-color">
+                        <h2 class="avail-text">Avialble Appointments On Novmeber 28,2018</h2>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="avail-appoint">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p class="s-text">Plastic Surgery</p>
+                                <i class="flaticon-clock-circular-outline text-white"></i>
+                                <span class="date-text">11:20 AM - 1:15 PM</span>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="space-text"> 1 Space Available </p>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="#" class="btn btn-appointment btn-r-0">Book Appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="avail-appoint">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p class="s-text">Plastic Surgery</p>
+                                <i class="flaticon-clock-circular-outline text-white"> </i>
+                                <span class="date-text">11:20 AM - 1:15 PM</span>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="space-text"> 1 Space Available </p>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="#" class="btn btn-appointment btn-r-0">Book Appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="avail-appoint">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p class="s-text">Plastic Surgery</p>
+                                <i class="flaticon-clock-circular-outline text-white"> </i>
+                                <span class="date-text">11:20 AM - 1:15 PM</span>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="space-text"> 1 Space Available </p>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="#" class="btn btn-appointment btn-r-0">Book Appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="mt-150"></section>
+    <section id="team" class="mt-90">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <p class="pro-text">Meet our Professionals</p>
+                    <h2 class="doc-text below-doc">Doctors</h2>
+                </div>
+            </div>
+            <div class="mt-95">
+                <div class="responsive">
+                    <div>
+                        <div class="card">
+                            <img class="card-img-top" src="assets/Images/doc-team/d1.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Monica Lisa</h5>
+                                <p class="card-text">Plastic Surgeon</p>
+                            </div>
+                            <div class="card-footer">
+                                <i class="flaticon-old-handphone mr-2 color-black" aria-hidden="true"></i><span class="no-text">1-800-555-0120</span>
+                                <a href="#" class="link-color"><i class="flaticon-facebook-letter-logo doc-social"></i></a>
+                                <a href="#" class="link-color"><i class="flaticon-twitter-logo-silhouette doc-social"></i></a>
+                                <a href="#" class="link-color"><i class="flaticon-google-plus-logo doc-social"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  <div class="Rectangle_5 "></div>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="info-text">Contact Info</h2>
+                    <div class="row mt-70">
+                        <div class="col-md-12">
+                            <div class="media">
+                                <img src="assets/Images/contact/email.png" class="mr-5" />
+                                <div class="media-body">
+                                    <p class="mail-text">
+                                        Contact@freshface.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mt-70">
+                            <div class="media">
+                                <img src="assets/Images/contact/mobile.png" class="mr-5" />
+                                <div class="media-body">
+                                    <p class="mail-text">
+                                        +123 345 7890
+                                        <br />
+                                        +123 345 7890
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mt-70">
+                            <div class="media">
+                                <img src="assets/Images/contact/location.png" class="mr-5" />
+                                <div class="media-body">
+                                    <p class="mail-text">
+                                        123, Fresh Town,Balter Road ,LA 1236
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="contact-text">Keep in Touch</h2>
+                    <form action="/" method="post" class="mt-35">
+                        <div class="row">
+                            <div class="col-md-12 mt-25">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name *" required="" />
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-25">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your E-mail *" required="" />
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-25">
+                                <div class="form-group">
+                                    <textarea type="text" class="form-control" placeholder="Your Message *" required="" rows="6"></textarea>
+                                </div>
+                                <div class="mt-25">
+                                    <button type="submit" class="btn btn-send btn-block">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="background-color">
+            <h2 class="copy-text text-center p-5">
+                Copyright &copy; 2018. Design by Bizinabox
+            </h2>
+        </div>
+    </section>
     <!-- ===================== JQuery Script Library ==================== -->
     <script src="assets/Bootstrap4/js/jquery.slim.min.js"></script>
     <script src="assets/Bootstrap4/js/poper.min.js"></script>
@@ -386,6 +620,7 @@
     <script src="assets/Bootstrap4/LightBox/dist/js/lightbox.js"></script>
     <script src="assets/Bootstrap4/js/owl.carousel.min.js"></script>
     <script src="assets/Bootstrap4/js/slick.min.js"></script>
+    <script src="assets/Bootstrap4/js/calendar.js"></script>
     <script src="assets/Bootstrap4/js/jquery-ui.js"></script>
     <script src="assets/Bootstrap4/js/loadMoreResults.js"></script>
     <script src="assets/Bootstrap4/js/smoothscroll.js"></script>
@@ -394,6 +629,11 @@
     <script src="assets/Bootstrap4/js/script.js"></script>
     <script type="text/javascript">
         new WOW().init();
+        $(function () {
+            var cal = CALENDAR();
+            cal.init();
+        });
+
     </script>
 </body>
 </html>

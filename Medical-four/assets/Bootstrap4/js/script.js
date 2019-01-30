@@ -158,17 +158,17 @@ $(function () {
     $("#datepicker").datepicker();
 });
 /* ==================== Js Function to give the class on Scroll ================== */
-//$(function () {
-//    $(window).scroll(function () {
-//        var scroll = $(window).scrollTop();
+$(function () {
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
 
-//        if (scroll >= 100) {
-//            $("nav").addClass("fixed-top");
-//        } else {
-//            $("nav").removeClass("fixed-top ");
-//        }
-//    });
-//});
+        if (scroll >= 100) {
+            $("nav").addClass("fixed-top");
+        } else {
+            $("nav").removeClass("fixed-top ");
+        }
+    });
+});
 //(function () {
 //    $(window).scroll(function () {
 //        var scroll = $(window).scrollTop();
@@ -182,31 +182,32 @@ $(function () {
 //});
 
 /* ==================== Js Function For the Owl Carousel Slider ================== */
-$(function () {
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        //autoplay: true,
-        margin: 15,
-        dots: true,
-        responsiveClass: true,
-        slideBy: '3',
-        responsive: {
-            0: {
-                items: 1,
-                nav: true
-            },
-            600: {
-                items: 3,
-                nav: true
-            },
-            1000: {
-                items: 3,
-                nav: true,
-                loop: false
-            }
-        }
-    });
-});
+//$(function () {
+//    $('.owl-carousel').owlCarousel({
+//        loop: true,
+//        //autoplay: true,
+//        arrow: true,
+//        margin: 15,
+//        dots: true,
+//        responsiveClass: true,
+//        slideBy: '4',
+//        responsive: {
+//            0: {
+//                items: 1,
+//                nav: true
+//            },
+//            600: {
+//                items: 3,
+//                nav: true
+//            },
+//            1000: {
+//                items: 4,
+//                nav: true,
+//                loop: false
+//            }
+//        }
+//    });
+//});
 /*===================== Load More Images ======================*/
 $(document).ready(function () {
 
@@ -244,4 +245,43 @@ $(document).ready(function () {
 /*===================== Date Picker Function ======================*/
 $(function () {
     $("#datepicker").datepicker();
+});
+
+
+$(function () {
+    $('.responsive').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
 });

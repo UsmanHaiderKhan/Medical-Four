@@ -1,5 +1,4 @@
 ﻿
-
 #cal {
     width: 100%;
     margin: 50px auto;
@@ -59,10 +58,11 @@
 }
 
 #cal .header .button {
-    width: 24px;
     text-align: center;
     position: absolute;
 }
+
+
 
     #cal .header .button:hover {
         background: -moz-linear-gradient(top, #006a92, #006a92);
@@ -70,8 +70,8 @@
     }
 
 #cal .header .right.button {
-    right: 0;
-    top: 0;
+    right: 22px;
+    top: 22px;
     border-left: 1px solid #006a92;
     border-top-right-radius: 5px;
     -moz-border-radius-topright: 5px;
@@ -79,13 +79,31 @@
 }
 
 #cal .header .left.button {
-    left: 0;
+    top: 22px;
+    left: 22px;
     border-right: 1px solid #006a92;
     border-top-left-radius: 5px;
     -moz-border-radius-topleft: 5px;
     -webkit-border-top-left-radius: 5px;
 }
 
+.left-setting {
+    top: 11px;
+    right: 16px;
+}
+
+.right-setting {
+    top: 9px;
+    right: 14px;
+}
+
+.color-bg {
+    width: 25px;
+    height: auto;
+    color: #000000;
+    border-radius: 50%;
+    background-color: #fff;
+}
 
 #cal .header .month-year {
     padding: 24px;
@@ -102,12 +120,13 @@
 
 #cal td {
     color: #2d2d2d;
-    width: 30px;
-    height: 30px;
+    width: 105px;
+    height: 100px;
     line-height: 30px;
     text-align: center;
     border: 1px solid #e6e6e6;
     cursor: default;
+    font-size: 44px;
 }
 
 #cal .row-bg {
@@ -174,5 +193,34 @@
     float: right;
 }
 
-.row-bg {
+@media screen and (max-width: 411px) {
+    #cal td {
+        font-size: 19px;
+        width: 14%;
+        height: 50px;
+    }
+
+    #label {
+        font-size: 18px;
+    }
+
+    .appoint-color {
+        padding: 20px 10px 10px 24px;
+    }
+
+    .avail-text {
+        font-size: 18px;
+    }
+
+    .s-text {
+        font-size: 14px;
+    }
+
+    .date-text {
+        font-size: 15px;
+    }
+
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        font-size: 13px;
+    }
 }

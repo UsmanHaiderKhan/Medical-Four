@@ -191,7 +191,7 @@ html, body {
 }
 
 .nav-trans {
-    transition: padding 400ms linear;
+    transition: 0.5s linear;
 }
 
 .pt-45 {
@@ -206,19 +206,24 @@ html, body {
     margin-bottom: 100px;
 }
 
-[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+#nav-icons [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
     font-family: Flaticon;
-    font-size: 20px;
+    font-size: 14px;
     font-style: normal;
     margin-left: 0;
-}
-
-.social-circle {
     color: #006a92;
     border: 2px solid #006a92;
     padding: 8px;
     border-radius: 50%;
     text-align: center;
+}
+
+.navbar {
+    padding: 0.5rem 5rem;
+}
+
+.margin-5 {
+    margin: 5px;
 }
 
 #HOME {
@@ -271,7 +276,7 @@ html, body {
 }*/
 
 .navbar-nav .nav-link {
-    color: #000000;
+    color: #4a7a97;
     font-size: 18px;
     text-transform: uppercase;
     font-family: 'OpenSans-Bold';
@@ -409,7 +414,7 @@ html, body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 78px 35px;
+    padding: 48px 35px;
     background-image: url('../../Images/bgs/lip-bg.png');
 }
 
@@ -473,12 +478,13 @@ html, body {
 
 
 .below-tag {
-    line-height: 2em;
+    line-height: 1em;
     text-align: center;
     position: relative;
 }
 
     .below-tag:after {
+        margin-top: 21px;
         content: '';
         position: absolute;
         display: block;
@@ -627,7 +633,6 @@ html, body {
 
 .below-After {
     line-height: 1em;
-    text-align: center;
     position: relative;
 }
 
@@ -824,16 +829,19 @@ html, body {
     color: #000000;
 }
 
-.doc-social {
+#team [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-family: Flaticon;
+    font-size: 14px;
+    font-style: normal;
+    margin-left: 0;
     color: #000000;
     border: 2px solid #000000;
-    padding: 2px;
+    padding: 4px;
     border-radius: 50%;
-    text-align: center;
 }
 
-#team [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-    font-size: 15px;
+#team .flaticon-old-handphone:before {
+    border: none;
 }
 
 #team .slick-prev:before, .slick-next:before {
@@ -870,10 +878,20 @@ html, body {
     font-family: 'Raleway-Medium' !important;
 }
 
-.slick-prev, .slick-next {
+.slick-next {
     width: 35px;
     height: 59px;
-    border: 1px solid #000;
+    border-bottom: 1px solid #a1a1a1;
+    border-right: 1px solid #a1a1a1;
+    border-top: 1px solid #a1a1a1;
+}
+
+.slick-prev {
+    width: 35px;
+    height: 59px;
+    border-bottom: 1px solid #a1a1a1;
+    border-left: 1px solid #a1a1a1;
+    border-top: 1px solid #a1a1a1;
 }
 
 .link-color {
@@ -945,8 +963,10 @@ html, body {
 .copy-text {
     color: #000000;
     margin-bottom: 0px;
+    font-size: 24px;
     font-family: 'Montserrat-SemiBold';
 }
+
 /*=================== Belo Banner Margins ===================*/
 .link-style {
     text-decoration: none;
@@ -976,7 +996,10 @@ html, body {
         text-decoration: none;
     }
 
+/*==================================*/
 
+
+/*==================================*/
 /*=================== Belo Banner Margins ===================*/
 .cursor {
     cursor: pointer;
@@ -1346,9 +1369,10 @@ button:focus {
 }
 /*================ Media Query ===============*/
 @media screen and (max-width: 1024px) {
-    .media-align {
-        text-align: center;
+    .lip-bg {
+        padding: 25px 35px;
     }
+
 
     .nav-item {
         padding: 0px;
@@ -1362,6 +1386,10 @@ button:focus {
         margin-top: 10px;
     }
 
+    .media-header-mt {
+        margin-top: 10px;
+    }
+
     #HOME {
         padding: 40px 0px 30px 0px;
     }
@@ -1388,14 +1416,180 @@ button:focus {
         font-size: 15px;
         line-height: 40px;
     }
+
+    .btn-appointment {
+        width: 175px;
+        height: 55px;
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    .exellence-text {
+        font-size: 23px;
+    }
+
+    .color-one {
+        font-size: 30px;
+    }
+
+    .color-two {
+        font-size: 30px;
+    }
+
+    .about-text {
+        width: 82%;
+        font-size: 16px;
+        margin-left: 12%
+    }
+
+    .option-text {
+        font-size: 19px;
+    }
+
+    .no-color {
+        font-size: 21px;
+    }
+
+    .book-visit {
+        font-size: 18px;
+    }
+
+    .service-text {
+        font-size: 26px;
+    }
+
+    .sur-text {
+        font-size: 20px;
+    }
+
+    .sur-desc {
+        font-size: 16px;
+    }
+
+
+
+    .facial-text {
+        font-size: 22px;
+    }
+
+    .facial-desc {
+        font-size: 16px;
+    }
+
+    .customer-text {
+        font-size: 22px;
+    }
+
+    .service-heading {
+        font-size: 18px;
+    }
+
+    .service-desc {
+        font-size: 16px;
+    }
+
+    .mt-105 {
+        margin-top: 0px;
+    }
+
+    .mt-110 {
+        margin-top: 40px;
+    }
+
+    .dis-text {
+        font-size: 30px;
+    }
+
+    .after-gallery-text {
+        font-size: 25px;
+    }
+
+    .gallery-desc {
+        font-size: 18px;
+    }
+
+    .gallery-text-desc {
+        font-size: 13px;
+    }
+
+    .btn-view-gallery {
+        font-size: 13px;
+    }
+
+    .g-text {
+        font-size: 30px;
+    }
+
+    .appoint-text {
+        font-size: 22px;
+    }
+
+    .appoint-color {
+        padding: 20px 10px 10px 24px;
+    }
+
+    .avail-text {
+        font-size: 26px;
+    }
+
+    .s-text {
+        font-size: 14px;
+    }
+
+    .date-text {
+        font-size: 15px;
+    }
+
+    .space-text {
+        font-size: 18px;
+    }
+
+    .doc-text {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-text {
+        font-size: 15px;
+    }
+
+    .info-text {
+        font-size: 26px;
+    }
+
+    .mail-text {
+        font-size: 18px;
+    }
+
+    .contact-text {
+        font-size: 26px
+    }
+
+    .copy-text {
+        font-size: 15px;
+    }
+
+    .btn-send {
+        height: 55px;
+        font-size: 19px;
+    }
 }
 
 @media screen and (max-width:800px) {
-}
+    .media-skin-mt {
+        margin-top: 20px;
+    }
 
-@media screen and (max-width: 768px) {
     .media-align {
         text-align: center;
+    }
+
+    .media-about-mt {
+        margin-top: 30px;
     }
 
     .ml-25-per {
@@ -1431,6 +1625,373 @@ button:focus {
         height: 54px;
         font-size: 15px;
         line-height: 40px;
+    }
+
+    .btn-appointment {
+        width: 175px;
+        height: 55px;
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    .exellence-text {
+        font-size: 23px;
+    }
+
+    .color-one {
+        font-size: 26px;
+    }
+
+    .color-two {
+        font-size: 26px;
+    }
+
+    .about-text {
+        font-size: 14px;
+    }
+
+    .option-text {
+        font-size: 16px;
+    }
+
+    .no-color {
+        font-size: 17px;
+    }
+
+    .book-visit {
+        font-size: 18px;
+    }
+
+    .service-text {
+        font-size: 26px;
+    }
+
+    .sur-text {
+        font-size: 20px;
+    }
+
+    .sur-desc {
+        font-size: 16px;
+    }
+
+
+
+    .facial-text {
+        font-size: 22px;
+    }
+
+    .facial-desc {
+        font-size: 16px;
+    }
+
+    .customer-text {
+        font-size: 22px;
+    }
+
+    .service-heading {
+        font-size: 18px;
+    }
+
+    .service-desc {
+        font-size: 16px;
+    }
+
+    .mt-105 {
+        margin-top: 0px;
+    }
+
+    .mt-110 {
+        margin-top: 40px;
+    }
+
+    .dis-text {
+        font-size: 19px;
+    }
+
+    .after-gallery-text {
+        font-size: 25px;
+    }
+
+    .gallery-desc {
+        font-size: 18px;
+    }
+
+    .gallery-text-desc {
+        font-size: 13px;
+    }
+
+    .btn-view-gallery {
+        font-size: 13px;
+    }
+
+    .g-text {
+        font-size: 30px;
+    }
+
+    .appoint-text {
+        font-size: 22px;
+    }
+
+    .appoint-color {
+        padding: 20px 10px 10px 24px;
+    }
+
+    .avail-text {
+        font-size: 18px;
+    }
+
+    .s-text {
+        font-size: 14px;
+    }
+
+    .date-text {
+        font-size: 15px;
+    }
+
+    .space-text {
+        font-size: 18px;
+    }
+
+    .doc-text {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-text {
+        font-size: 15px;
+    }
+
+    .info-text {
+        font-size: 26px;
+    }
+
+    .mail-text {
+        font-size: 18px;
+    }
+
+    .contact-text {
+        font-size: 26px
+    }
+
+    .copy-text {
+        font-size: 15px;
+    }
+
+    .btn-send {
+        height: 55px;
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .media-skin-mt {
+        margin-top: 20px;
+    }
+
+    .media-align {
+        text-align: center;
+    }
+
+    .media-about-mt {
+        margin-top: 30px;
+    }
+
+    .ml-25-per {
+        margin-left: 34%;
+    }
+
+    .media-header-mt {
+        margin-top: 10px;
+    }
+
+    #HOME {
+        padding: 40px 0px 30px 0px;
+    }
+
+    .help-text {
+        font-size: 30px;
+    }
+
+    .main-heading {
+        font-size: 50px;
+    }
+
+    .look-text {
+        font-size: 50px;
+    }
+
+    .sub-desc {
+        font-size: 16px;
+    }
+
+    .btn-contact {
+        width: 150px;
+        height: 54px;
+        font-size: 15px;
+        line-height: 40px;
+    }
+
+    .btn-appointment {
+        width: 175px;
+        height: 55px;
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    .exellence-text {
+        font-size: 23px;
+    }
+
+    .color-one {
+        font-size: 26px;
+    }
+
+    .color-two {
+        font-size: 26px;
+    }
+
+    .about-text {
+        font-size: 14px;
+    }
+
+    .option-text {
+        font-size: 16px;
+    }
+
+    .no-color {
+        font-size: 17px;
+    }
+
+    .book-visit {
+        font-size: 18px;
+    }
+
+    .service-text {
+        font-size: 26px;
+    }
+
+    .sur-text {
+        font-size: 20px;
+    }
+
+    .sur-desc {
+        font-size: 16px;
+    }
+
+
+
+    .facial-text {
+        font-size: 22px;
+    }
+
+    .facial-desc {
+        font-size: 16px;
+    }
+
+    .customer-text {
+        font-size: 22px;
+    }
+
+    .service-heading {
+        font-size: 18px;
+    }
+
+    .service-desc {
+        font-size: 16px;
+    }
+
+    .mt-105 {
+        margin-top: 0px;
+    }
+
+    .mt-110 {
+        margin-top: 40px;
+    }
+
+    .dis-text {
+        font-size: 19px;
+    }
+
+    .after-gallery-text {
+        font-size: 25px;
+    }
+
+    .gallery-desc {
+        font-size: 18px;
+    }
+
+    .gallery-text-desc {
+        font-size: 13px;
+    }
+
+    .btn-view-gallery {
+        font-size: 13px;
+    }
+
+    .g-text {
+        font-size: 30px;
+    }
+
+    .appoint-text {
+        font-size: 22px;
+    }
+
+    .appoint-color {
+        padding: 20px 10px 10px 24px;
+    }
+
+    .avail-text {
+        font-size: 18px;
+    }
+
+    .s-text {
+        font-size: 14px;
+    }
+
+    .date-text {
+        font-size: 15px;
+    }
+
+    .space-text {
+        font-size: 18px;
+    }
+
+    .doc-text {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-text {
+        font-size: 15px;
+    }
+
+    .info-text {
+        font-size: 26px;
+    }
+
+    .mail-text {
+        font-size: 18px;
+    }
+
+    .contact-text {
+        font-size: 26px
+    }
+
+    .copy-text {
+        font-size: 15px;
+    }
+
+    .btn-send {
+        height: 55px;
+        font-size: 19px;
     }
 }
 
@@ -1439,6 +2000,22 @@ button:focus {
         text-align: center;
     }
 
+    .media-contact-mt {
+        margin-top: 30px;
+    }
+
+    .media-about-mt {
+        margin-top: 30px;
+    }
+
+    .ml-25-per {
+        margin-left: 48px;
+    }
+
+    .header-bg {
+        padding: 50px 30px 10px 30px;
+    }
+
     .media-header-mt {
         margin-top: 10px;
     }
@@ -1468,6 +2045,167 @@ button:focus {
         height: 54px;
         font-size: 15px;
         line-height: 40px;
+    }
+
+    .btn-appointment {
+        width: 175px;
+        height: 55px;
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    .exellence-text {
+        font-size: 23px;
+    }
+
+    .color-one {
+        font-size: 26px;
+    }
+
+    .color-two {
+        font-size: 26px;
+    }
+
+    .about-text {
+        font-size: 14px;
+    }
+
+    .option-text {
+        font-size: 16px;
+    }
+
+    .no-color {
+        font-size: 17px;
+    }
+
+    .book-visit {
+        font-size: 18px;
+    }
+
+    .service-text {
+        font-size: 26px;
+    }
+
+    .sur-text {
+        font-size: 20px;
+    }
+
+    .sur-desc {
+        font-size: 16px;
+    }
+
+    .media-width {
+        width: 100%;
+    }
+
+    .facial-text {
+        font-size: 22px;
+    }
+
+    .facial-desc {
+        font-size: 16px;
+    }
+
+    .customer-text {
+        font-size: 22px;
+    }
+
+    .service-heading {
+        font-size: 18px;
+    }
+
+    .service-desc {
+        font-size: 16px;
+    }
+
+    .mt-105 {
+        margin-top: 5px;
+    }
+
+    .mt-110 {
+        margin-top: 40px;
+    }
+
+    .dis-text {
+        font-size: 19px;
+    }
+
+    .after-gallery-text {
+        font-size: 25px;
+    }
+
+    .gallery-desc {
+        font-size: 18px;
+    }
+
+    .gallery-text-desc {
+        font-size: 13px;
+    }
+
+    .btn-view-gallery {
+        font-size: 13px;
+    }
+
+    .g-text {
+        font-size: 30px;
+    }
+
+    .appoint-text {
+        font-size: 22px;
+    }
+
+    .appoint-color {
+        padding: 20px 10px 10px 24px;
+    }
+
+    .avail-text {
+        font-size: 18px;
+    }
+
+    .s-text {
+        font-size: 14px;
+    }
+
+    .date-text {
+        font-size: 15px;
+    }
+
+    .space-text {
+        font-size: 18px;
+    }
+
+    .doc-text {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-text {
+        font-size: 15px;
+    }
+
+    .info-text {
+        font-size: 26px;
+    }
+
+    .mail-text {
+        font-size: 18px;
+    }
+
+    .contact-text {
+        font-size: 26px
+    }
+
+    .copy-text {
+        font-size: 15px;
+    }
+
+    .btn-send {
+        height: 55px;
+        font-size: 19px;
     }
 }
 
@@ -1476,6 +2214,18 @@ button:focus {
         text-align: center;
     }
 
+    .media-about-mt {
+        margin-top: 30px;
+    }
+
+    .ml-25-per {
+        margin-left: 48px;
+    }
+
+    .header-bg {
+        padding: 50px 30px 10px 30px;
+    }
+
     .media-header-mt {
         margin-top: 10px;
     }
@@ -1505,6 +2255,167 @@ button:focus {
         height: 54px;
         font-size: 15px;
         line-height: 40px;
+    }
+
+    .btn-appointment {
+        width: 175px;
+        height: 55px;
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    .exellence-text {
+        font-size: 23px;
+    }
+
+    .color-one {
+        font-size: 26px;
+    }
+
+    .color-two {
+        font-size: 26px;
+    }
+
+    .about-text {
+        font-size: 14px;
+    }
+
+    .option-text {
+        font-size: 16px;
+    }
+
+    .no-color {
+        font-size: 17px;
+    }
+
+    .book-visit {
+        font-size: 18px;
+    }
+
+    .service-text {
+        font-size: 26px;
+    }
+
+    .sur-text {
+        font-size: 20px;
+    }
+
+    .sur-desc {
+        font-size: 16px;
+    }
+
+    .media-width {
+        width: 100%;
+    }
+
+    .facial-text {
+        font-size: 22px;
+    }
+
+    .facial-desc {
+        font-size: 16px;
+    }
+
+    .customer-text {
+        font-size: 22px;
+    }
+
+    .service-heading {
+        font-size: 18px;
+    }
+
+    .service-desc {
+        font-size: 16px;
+    }
+
+    .mt-105 {
+        margin-top: 5px;
+    }
+
+    .mt-110 {
+        margin-top: 40px;
+    }
+
+    .dis-text {
+        font-size: 19px;
+    }
+
+    .after-gallery-text {
+        font-size: 25px;
+    }
+
+    .gallery-desc {
+        font-size: 18px;
+    }
+
+    .gallery-text-desc {
+        font-size: 13px;
+    }
+
+    .btn-view-gallery {
+        font-size: 13px;
+    }
+
+    .g-text {
+        font-size: 30px;
+    }
+
+    .appoint-text {
+        font-size: 22px;
+    }
+
+    .appoint-color {
+        padding: 20px 10px 10px 24px;
+    }
+
+    .avail-text {
+        font-size: 18px;
+    }
+
+    .s-text {
+        font-size: 14px;
+    }
+
+    .date-text {
+        font-size: 15px;
+    }
+
+    .space-text {
+        font-size: 18px;
+    }
+
+    .doc-text {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-text {
+        font-size: 15px;
+    }
+
+    .info-text {
+        font-size: 26px;
+    }
+
+    .mail-text {
+        font-size: 18px;
+    }
+
+    .contact-text {
+        font-size: 26px
+    }
+
+    .copy-text {
+        font-size: 15px;
+    }
+
+    .btn-send {
+        height: 55px;
+        font-size: 19px;
     }
 }
 
@@ -1513,6 +2424,18 @@ button:focus {
         text-align: center;
     }
 
+    .media-about-mt {
+        margin-top: 30px;
+    }
+
+    .ml-25-per {
+        margin-left: 48px;
+    }
+
+    .header-bg {
+        padding: 50px 30px 10px 30px;
+    }
+
     .media-header-mt {
         margin-top: 10px;
     }
@@ -1542,6 +2465,167 @@ button:focus {
         height: 54px;
         font-size: 15px;
         line-height: 40px;
+    }
+
+    .btn-appointment {
+        width: 175px;
+        height: 55px;
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    .exellence-text {
+        font-size: 23px;
+    }
+
+    .color-one {
+        font-size: 26px;
+    }
+
+    .color-two {
+        font-size: 26px;
+    }
+
+    .about-text {
+        font-size: 14px;
+    }
+
+    .option-text {
+        font-size: 16px;
+    }
+
+    .no-color {
+        font-size: 17px;
+    }
+
+    .book-visit {
+        font-size: 18px;
+    }
+
+    .service-text {
+        font-size: 26px;
+    }
+
+    .sur-text {
+        font-size: 20px;
+    }
+
+    .sur-desc {
+        font-size: 16px;
+    }
+
+    .media-width {
+        width: 100%;
+    }
+
+    .facial-text {
+        font-size: 22px;
+    }
+
+    .facial-desc {
+        font-size: 16px;
+    }
+
+    .customer-text {
+        font-size: 22px;
+    }
+
+    .service-heading {
+        font-size: 18px;
+    }
+
+    .service-desc {
+        font-size: 16px;
+    }
+
+    .mt-105 {
+        margin-top: 5px;
+    }
+
+    .mt-110 {
+        margin-top: 40px;
+    }
+
+    .dis-text {
+        font-size: 19px;
+    }
+
+    .after-gallery-text {
+        font-size: 25px;
+    }
+
+    .gallery-desc {
+        font-size: 18px;
+    }
+
+    .gallery-text-desc {
+        font-size: 13px;
+    }
+
+    .btn-view-gallery {
+        font-size: 13px;
+    }
+
+    .g-text {
+        font-size: 30px;
+    }
+
+    .appoint-text {
+        font-size: 22px;
+    }
+
+    .appoint-color {
+        padding: 20px 10px 10px 24px;
+    }
+
+    .avail-text {
+        font-size: 18px;
+    }
+
+    .s-text {
+        font-size: 14px;
+    }
+
+    .date-text {
+        font-size: 15px;
+    }
+
+    .space-text {
+        font-size: 18px;
+    }
+
+    .doc-text {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-text {
+        font-size: 15px;
+    }
+
+    .info-text {
+        font-size: 26px;
+    }
+
+    .mail-text {
+        font-size: 18px;
+    }
+
+    .contact-text {
+        font-size: 26px
+    }
+
+    .copy-text {
+        font-size: 15px;
+    }
+
+    .btn-send {
+        height: 55px;
+        font-size: 19px;
     }
 }
 
@@ -1550,6 +2634,18 @@ button:focus {
         text-align: center;
     }
 
+    .media-about-mt {
+        margin-top: 30px;
+    }
+
+    .ml-25-per {
+        margin-left: 48px;
+    }
+
+    .header-bg {
+        padding: 50px 30px 10px 30px;
+    }
+
     .media-header-mt {
         margin-top: 10px;
     }
@@ -1580,18 +2676,202 @@ button:focus {
         font-size: 15px;
         line-height: 40px;
     }
+
+    .btn-appointment {
+        width: 175px;
+        height: 55px;
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    .exellence-text {
+        font-size: 23px;
+    }
+
+    .color-one {
+        font-size: 26px;
+    }
+
+    .color-two {
+        font-size: 26px;
+    }
+
+    .about-text {
+        font-size: 14px;
+    }
+
+    .option-text {
+        font-size: 16px;
+    }
+
+    .no-color {
+        font-size: 17px;
+    }
+
+    .book-visit {
+        font-size: 18px;
+    }
+
+    .service-text {
+        font-size: 26px;
+    }
+
+    .sur-text {
+        font-size: 20px;
+    }
+
+    .sur-desc {
+        font-size: 16px;
+    }
+
+    .media-width {
+        width: 100%;
+    }
+
+    .facial-text {
+        font-size: 22px;
+    }
+
+    .facial-desc {
+        font-size: 16px;
+    }
+
+    .customer-text {
+        font-size: 22px;
+    }
+
+    .service-heading {
+        font-size: 18px;
+    }
+
+    .service-desc {
+        font-size: 16px;
+    }
+
+    .mt-105 {
+        margin-top: 5px;
+    }
+
+    .mt-110 {
+        margin-top: 40px;
+    }
+
+    .dis-text {
+        font-size: 19px;
+    }
+
+    .after-gallery-text {
+        font-size: 25px;
+    }
+
+    .gallery-desc {
+        font-size: 18px;
+    }
+
+    .gallery-text-desc {
+        font-size: 13px;
+    }
+
+    .btn-view-gallery {
+        font-size: 13px;
+    }
+
+    .g-text {
+        font-size: 30px;
+    }
+
+    .appoint-text {
+        font-size: 22px;
+    }
+
+    .appoint-color {
+        padding: 20px 10px 10px 24px;
+    }
+
+    .avail-text {
+        font-size: 18px;
+    }
+
+    .s-text {
+        font-size: 14px;
+    }
+
+    .date-text {
+        font-size: 15px;
+    }
+
+    .space-text {
+        font-size: 18px;
+    }
+
+    .doc-text {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-text {
+        font-size: 15px;
+    }
+
+    .info-text {
+        font-size: 26px;
+    }
+
+    .mail-text {
+        font-size: 18px;
+    }
+
+    .contact-text {
+        font-size: 26px
+    }
+
+    .copy-text {
+        font-size: 15px;
+    }
+
+    .btn-send {
+        height: 55px;
+        font-size: 19px;
+    }
 }
 
 /*==================== Media Query For Land Scape Mode =====================*/
-@media screen and (max-width: 1366px) and (orientation: landscape) {
+@media screen and (max-width: 1500px) and (orientation: landscape) {
+    .lip-bg {
+        height: 100%;
+    }
+
+    .skin-bg {
+        height: 100%;
+    }
+
+    .breast-bg {
+        height: 100%;
+    }
 }
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {
 }
 
 @media screen and (max-width: 823px) and (orientation: landscape) {
+    .media-skin-mt {
+        margin-top: 20px;
+    }
+
+    .media-ml {
+        margin-left: 38% !important;
+    }
+
     .media-align {
         text-align: center;
+    }
+
+    .media-about-mt {
+        margin-top: 30px;
     }
 
     .ml-25-per {
@@ -1628,12 +2908,395 @@ button:focus {
         font-size: 15px;
         line-height: 40px;
     }
+
+    .btn-appointment {
+        width: 175px;
+        height: 55px;
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    .exellence-text {
+        font-size: 23px;
+    }
+
+    .color-one {
+        font-size: 26px;
+    }
+
+    .color-two {
+        font-size: 26px;
+    }
+
+    .about-text {
+        font-size: 14px;
+    }
+
+    .option-text {
+        font-size: 16px;
+    }
+
+    .no-color {
+        font-size: 17px;
+    }
+
+    .book-visit {
+        font-size: 18px;
+    }
+
+    .service-text {
+        font-size: 26px;
+    }
+
+    .sur-text {
+        font-size: 20px;
+    }
+
+    .sur-desc {
+        font-size: 16px;
+    }
+
+    .media-width {
+        width: 100%;
+    }
+
+    .facial-text {
+        font-size: 22px;
+    }
+
+    .facial-desc {
+        font-size: 16px;
+    }
+
+    .customer-text {
+        font-size: 22px;
+    }
+
+    .service-heading {
+        font-size: 18px;
+    }
+
+    .service-desc {
+        font-size: 16px;
+    }
+
+    .mt-105 {
+        margin-top: 5px;
+    }
+
+    .mt-110 {
+        margin-top: 40px;
+    }
+
+    .dis-text {
+        font-size: 19px;
+    }
+
+    .after-gallery-text {
+        font-size: 25px;
+    }
+
+    .gallery-desc {
+        font-size: 18px;
+    }
+
+    .gallery-text-desc {
+        font-size: 13px;
+    }
+
+    .btn-view-gallery {
+        font-size: 13px;
+    }
+
+    .g-text {
+        font-size: 30px;
+    }
+
+    .appoint-text {
+        font-size: 22px;
+    }
+
+    .appoint-color {
+        padding: 20px 10px 10px 24px;
+    }
+
+    .avail-text {
+        font-size: 18px;
+    }
+
+    .s-text {
+        font-size: 14px;
+    }
+
+    .date-text {
+        font-size: 15px;
+    }
+
+    .space-text {
+        font-size: 18px;
+    }
+
+    .doc-text {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-text {
+        font-size: 15px;
+    }
+
+    .info-text {
+        font-size: 26px;
+    }
+
+    .mail-text {
+        font-size: 18px;
+    }
+
+    .contact-text {
+        font-size: 26px
+    }
+
+    .copy-text {
+        font-size: 15px;
+    }
+
+    .btn-send {
+        height: 55px;
+        font-size: 19px;
+    }
 }
 
 @media screen and (max-width: 740px) and (orientation: landscape) {
+    .media-align {
+        text-align: center;
+    }
+
+    .ml-25-per {
+        margin-left: 31%;
+    }
+
+    .media-header-mt {
+        margin-top: 10px;
+    }
+
+    #HOME {
+        padding: 40px 0px 30px 0px;
+    }
+
+    .help-text {
+        font-size: 30px;
+    }
+
+    .main-heading {
+        font-size: 50px;
+    }
+
+    .look-text {
+        font-size: 50px;
+    }
+
+    .sub-desc {
+        font-size: 16px;
+    }
+
+    .btn-contact {
+        width: 150px;
+        height: 54px;
+        font-size: 15px;
+        line-height: 40px;
+    }
+
+    .sur-text {
+        font-size: 25px;
+    }
+
+    .sur-desc {
+        font-size: 18px;
+    }
+
+    .facial-text {
+        font-size: 25px;
+    }
+
+    .facial-desc {
+        font-size: 18px;
+    }
+
+    .option-text {
+        font-size: 21px;
+    }
+
+    .no-color {
+        font-size: 23px;
+    }
+
+    .service-heading {
+        font-size: 25px;
+    }
+
+    .service-desc {
+        font-size: 18px;
+    }
+
+    .after-gallery-text {
+        font-size: 30px;
+    }
+
+    .gallery-desc {
+        font-size: 20px;
+    }
+
+    .gallery-text-desc {
+        font-size: 16px;
+    }
+
+    .appoint-text {
+        font-size: 30px;
+    }
+
+    .s-text {
+        font-size: 18px;
+    }
+
+    .date-text {
+        font-size: 20px;
+    }
+
+    .doc-social {
+        border: 1px solid;
+        padding: 3px;
+    }
+
+    .space-text {
+        font-size: 22px;
+    }
+
+    .no-text {
+        font-size: 12px;
+    }
+
+    .dis-text {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 736px) and (orientation: landscape) {
+    .media-align {
+        text-align: center;
+    }
+
+    .ml-25-per {
+        margin-left: 31%;
+    }
+
+    .media-header-mt {
+        margin-top: 10px;
+    }
+
+    #HOME {
+        padding: 40px 0px 30px 0px;
+    }
+
+    .help-text {
+        font-size: 30px;
+    }
+
+    .main-heading {
+        font-size: 50px;
+    }
+
+    .look-text {
+        font-size: 50px;
+    }
+
+    .sub-desc {
+        font-size: 16px;
+    }
+
+    .btn-contact {
+        width: 150px;
+        height: 54px;
+        font-size: 15px;
+        line-height: 40px;
+    }
+
+    .sur-text {
+        font-size: 25px;
+    }
+
+    .sur-desc {
+        font-size: 18px;
+    }
+
+    .facial-text {
+        font-size: 25px;
+    }
+
+    .facial-desc {
+        font-size: 18px;
+    }
+
+    .option-text {
+        font-size: 21px;
+    }
+
+    .no-color {
+        font-size: 23px;
+    }
+
+    .service-heading {
+        font-size: 25px;
+    }
+
+    .service-desc {
+        font-size: 18px;
+    }
+
+    .after-gallery-text {
+        font-size: 30px;
+    }
+
+    .gallery-desc {
+        font-size: 20px;
+    }
+
+    .gallery-text-desc {
+        font-size: 16px;
+    }
+
+    .appoint-text {
+        font-size: 30px;
+    }
+
+    .s-text {
+        font-size: 18px;
+    }
+
+    .date-text {
+        font-size: 20px;
+    }
+
+    .doc-social {
+        border: 1px solid;
+        padding: 3px;
+    }
+
+    .space-text {
+        font-size: 22px;
+    }
+
+    .no-text {
+        font-size: 12px;
+    }
+
+    .dis-text {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 731px) and (orientation: landscape) {
@@ -1674,6 +3337,79 @@ button:focus {
         height: 54px;
         font-size: 15px;
         line-height: 40px;
+    }
+
+    .sur-text {
+        font-size: 25px;
+    }
+
+    .sur-desc {
+        font-size: 18px;
+    }
+
+    .facial-text {
+        font-size: 25px;
+    }
+
+    .facial-desc {
+        font-size: 18px;
+    }
+
+    .option-text {
+        font-size: 21px;
+    }
+
+    .no-color {
+        font-size: 23px;
+    }
+
+    .service-heading {
+        font-size: 25px;
+    }
+
+    .service-desc {
+        font-size: 18px;
+    }
+
+    .after-gallery-text {
+        font-size: 30px;
+    }
+
+    .gallery-desc {
+        font-size: 20px;
+    }
+
+    .gallery-text-desc {
+        font-size: 16px;
+    }
+
+    .appoint-text {
+        font-size: 30px;
+    }
+
+    .s-text {
+        font-size: 18px;
+    }
+
+    .date-text {
+        font-size: 20px;
+    }
+
+    .doc-social {
+        border: 1px solid;
+        padding: 3px;
+    }
+
+    .space-text {
+        font-size: 22px;
+    }
+
+    .no-text {
+        font-size: 12px;
+    }
+
+    .dis-text {
+        font-size: 30px;
     }
 }
 

@@ -884,15 +884,15 @@
             context.global = {
                 calendarHtml: helper.format('<div class="{0} {0}-{4}">\
                                     <div class="{1}">\
-                                      <a href="#" class="{1}-nav {1}-prev">\
-                                          <span class="flaticon-left {1}-icon"></span>\
+                                      <a href="#" class="{1}-nav {1}-prev position-relative">\
+                                        ' + ' <img src="assets/Images/arrow.png" /><span class="flaticon-left {1}-icon"></span>\
                                       </a>\
                                       <div class="{1}-date">\
                                           <span class="{1}-month"></span>\
                                           <span class="{1}-year"></span>\
                                       </div>\
                                       <a href="#" class="{1}-nav {1}-next">\
-                                          <span class="flaticon-right-arrow-angle {1}-icon"></span>\
+                                           ' + ' <img src="assets/Images/arrow.png" /> <span class="flaticon-right-arrow-angle {1}-icon"></span>\
                                       </a>\
                                     </div>\
                                     <div class="{2}"></div>\

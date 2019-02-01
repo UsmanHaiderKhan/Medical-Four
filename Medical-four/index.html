@@ -10,6 +10,7 @@
     <link href="assets/Bootstrap4/css/animate.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/css/slick.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/css/slick-theme.css" rel="stylesheet" />
+    <link href="assets/Bootstrap4/css/cocoen.min.css" rel="stylesheet" />
     <link href="assets/my-icons-collection_5/font/flaticon.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/css/styles.css" rel="stylesheet" />
     <title>Medical Theme | Four</title>
@@ -114,8 +115,12 @@
                 <h2 class="color-one">Welcome to <span class="color-two">Our Clinic</span></h2>
                 <p class="about-text mt-40">
                     Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit.
-                    <br />
+                    Tincidunt integer eu augue augue nunc elit dolor,
+                <p class="about-text">
                     Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit.
+                    Tincidunt integer eu augue augue nunc elit dolor,
+
+                </p>
                 </p>
                 <div class="mt-40">
                     <img class="mr-4" src="assets/Images/check.png" /><span class="option-text">Determine What you want to change</span>
@@ -174,7 +179,7 @@
                         <div class="col-md-6">
                             <div class="text-center mt-100">
                                 <h2 class="facial-text">Facial Procedure</h2>
-                                <p class="facial-desc text-center mt-35 comments-space">
+                                <p class="facial-desc p-padding text-center mt-35 comments-space">
                                     It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                                 </p>
                                 <!--<div class="text-center mt-46">
@@ -222,7 +227,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-8 offset-md-2">
-                    <p class="adv-text">Our Advantages</p>
+                    <p class="advantage-text">Our Advantages</p>
                     <h1 class="customer-text below-customer">Why Customer Choose US</h1>
                 </div>
             </div>
@@ -315,7 +320,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <img src="assets/Images/after-gallery.png" class="img-fluid" />
+                    <div class="cocoen">
+                        <img src="assets/Images/b1.png" alt="" class="img-fluid">
+                        <img src="assets/Images/b2.png" alt="" class="img-fluid">
+                    </div>
                 </div>
                 <div class="col-lg-6 media-about-mt">
                     <p class="work-text">our work</p>
@@ -331,7 +339,7 @@
                         Tincidunt integer eu augue augue nunc elit dolor augue augue nunc elit dolor augue augue nunc elit dolor.
                     </p>
                     <div>
-                        <a href class="btn btn-view-gallery btn-r-0">View Gallery</a>
+                        <a href="#gallery-pic" class="btn btn-view-gallery btn-r-0">View Gallery</a>
                     </div>
                 </div>
             </div>
@@ -378,7 +386,7 @@
                 <div class="calendar"></div>
             </div>
             <!-- Appointments -->
-            <div class="row mt-45 media-align">
+            <div class="row mt-2 media-align">
                 <div class="col-md-12">
                     <div class="appoint-color">
                         <h2 class="avail-text">Avialble Appointments On Novmeber 28,2018</h2>
@@ -643,7 +651,7 @@
                                 <img src="assets/Images/contact/email.png" class="mr-5" />
                                 <div class="media-body">
                                     <p class="mail-text">
-                                        Contact@freshface.com
+                                        <a href="mailto:usmanhaiderkhan4@hotmail.com" class="link-style">Contact@freshface.com</a>
                                     </p>
                                 </div>
                             </div>
@@ -717,10 +725,17 @@
     <script src="assets/Bootstrap4/js/loadMoreResults.js"></script>
     <script src="assets/Bootstrap4/js/smoothscroll.js"></script>
     <script src="assets/Bootstrap4/js/scrollinToview.js"></script>
+    <script src="assets/Bootstrap4/js/cocoen.min.js"></script>
     <script src="assets/Bootstrap4/js/wow.min.js"></script>
     <script src="assets/Bootstrap4/js/script.js"></script>
     <script type="text/javascript">
         //new WOW().init();
+        document.querySelectorAll('.cocoen').forEach(function (element) {
+            new Cocoen(element);
+        });
+        //$(function () {
+        //    $('.cocoen').cocoen();
+        //});
         $(function () {
             $('.calendar').pignoseCalendar();
         });

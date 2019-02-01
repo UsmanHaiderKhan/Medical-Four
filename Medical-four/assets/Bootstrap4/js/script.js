@@ -55,9 +55,9 @@ $(function () {
         var scroll = $(window).scrollTop();
 
         if (scroll >= 100) {
-            $("nav").addClass("fixed-top nav-trans");
+            $("nav").addClass("fixed-top sleep");
         } else {
-            $("nav").removeClass("fixed-top nav-trans");
+            $("nav").removeClass("fixed-top sleep");
         }
     });
 });

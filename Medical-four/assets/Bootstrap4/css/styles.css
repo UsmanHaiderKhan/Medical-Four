@@ -814,6 +814,14 @@ html, body {
         left: 43%;
     }
 
+.card {
+    border-radius: 0px;
+}
+
+.card-img-top {
+    border-radius: 0px;
+}
+
 .card-body {
     width: 100%;
     height: auto;
@@ -887,7 +895,7 @@ html, body {
 }
 
 .slick-next:before {
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Free" !important;
     content: "\f054";
     display: inline-block;
     padding-right: 3px;
@@ -896,7 +904,7 @@ html, body {
 }
 
 .slick-prev:before {
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Free" !important;
     content: "\f053";
     display: inline-block;
     padding-right: 3px;
@@ -905,7 +913,7 @@ html, body {
 }
 
 ::placeholder {
-    font-size: 24px !important;
+    font-size: 18px !important;
     color: #bbbbbb !important;
     font-family: 'Raleway-Medium' !important;
 }
@@ -1342,6 +1350,8 @@ button:focus {
     text-transform: uppercase;
     font-family: 'Montserrat-Bold';
     font-weight: bold;
+    border: none;
+    box-shadow: 8px 8px 0 -2px #a0cfe1;
     border-radius: 0px;
     background-image: -moz-linear-gradient( 90deg, rgb(15,97,119) 0%, rgb(24,138,159) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(15,97,119) 0%, rgb(24,138,159) 100%);
@@ -1403,6 +1413,7 @@ button:focus {
 .mt--95 {
     margin-top: -12px;
 }
+
 /*================ Calender Styling ===============*/
 .pignose-calendar {
     width: 100%;
@@ -1448,6 +1459,9 @@ button:focus {
 
     .pignose-calendar .pignose-calendar-unit.pignose-calendar-unit-active a {
         background-color: #006a92;
+        line-height: 153px;
+        height: 100%;
+        width: 100%;
     }
 
         .pignose-calendar .pignose-calendar-unit.pignose-calendar-unit-active a:hover {
@@ -1468,6 +1482,14 @@ button:focus {
     }
 
     .pignose-calendar .pignose-calendar-unit {
+        float: left;
+        display: block;
+        height: 150px;
+        width: 14.28%;
+        text-align: center;
+        line-height: 10.8em;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
         border-left: 2px solid #d9d9d9;
     }
 
@@ -2225,6 +2247,15 @@ button:focus {
             font-family: 'arial';
         }
 
+        .pignose-calendar .pignose-calendar-unit {
+            height: 95px;
+            line-height: 6.8em;
+        }
+
+            .pignose-calendar .pignose-calendar-unit.pignose-calendar-unit-active a {
+                line-height: 100px;
+            }
+
     /*====== End Calender =====*/
 }
 
@@ -2270,9 +2301,15 @@ button:focus {
             font-family: 'arial';
         }
 
+        .pignose-calendar .pignose-calendar-unit.pignose-calendar-unit-active a {
+            line-height: 53px;
+        }
+
+        .pignose-calendar .pignose-calendar-unit {
+            height: 50px;
+            line-height: 4.8em;
+        }
     /*====== End Calender =====*/
-
-
     .media-align {
         text-align: center;
     }

@@ -1542,6 +1542,9 @@ button:focus {
         padding: 25px 35px;
     }
 
+    .mt-40 {
+        margin-top: 14px;
+    }
 
     .nav-item {
         padding: 6px;
@@ -1606,9 +1609,7 @@ button:focus {
     }
 
     .about-text {
-        width: 82%;
         font-size: 16px;
-        margin-left: 12%
     }
 
     .option-text {
@@ -2338,7 +2339,7 @@ button:focus {
     }
 
     .header-bg {
-        padding: 50px 30px 10px 30px;
+        padding: 10px 10px 10px 10px;
     }
 
     .media-header-mt {
@@ -2552,7 +2553,7 @@ button:focus {
     }
 
     .header-bg {
-        padding: 50px 30px 10px 30px;
+        padding: 10px 10px 10px 10px;
     }
 
     .media-header-mt {
@@ -2766,7 +2767,7 @@ button:focus {
     }
 
     .header-bg {
-        padding: 50px 30px 10px 30px;
+        padding: 10px 10px 10px 10px;
     }
 
     .media-header-mt {
@@ -2980,7 +2981,7 @@ button:focus {
     }
 
     .header-bg {
-        padding: 50px 30px 10px 30px;
+        padding: 10px 10px 10px 10px;
     }
 
     .media-header-mt {

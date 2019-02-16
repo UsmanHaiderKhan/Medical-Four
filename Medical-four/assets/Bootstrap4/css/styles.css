@@ -1,149 +1,5 @@
 ﻿/*====================== Font Families =======================*/
 
-@font-face {
-    font-family: 'Lora-Regular';
-    src: url('../../Fonts/lora/Lora-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Montserrat-Bold';
-    src: url('../../Fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Lora-Bold';
-    src: url('../../Fonts/lora/Lora-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'OpenSans-Light';
-    src: url('../../Fonts/open-sense/OpenSans-Light.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Montserrat-SemiBold';
-    src: url('../../Fonts/montserrat/Montserrat-SemiBold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'OpenSans-Bold';
-    src: url('../../Fonts/open-sense/OpenSans-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Raleway-Medium';
-    src: url('../../Fonts/ralway/Raleway-Medium.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'OpenSans-ExtraBold';
-    src: url('../../Fonts/open-sense/OpenSans-ExtraBold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'OpenSans-Regular';
-    src: url('../../Fonts/open-sense/OpenSans-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'arial';
-    src: url('../../Fonts/arial.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Raleway-Black';
-    src: url('../../Fonts/ralway/Raleway-Black.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'OpenSans-SemiBold';
-    src: url('../../Fonts/open-sense/OpenSans-SemiBold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Raleway-Bold';
-    src: url('../../Fonts/ralway/Raleway-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Raleway-ExtraBold';
-    src: url('../../Fonts/ralway/Raleway-ExtraBold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Raleway-Light';
-    src: url('../../Fonts/ralway/Raleway-Light.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Raleway-Medium';
-    src: url('../../Fonts/ralway/Raleway-Medium.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Raleway-Regular';
-    src: url('../../Fonts/ralway/Raleway-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Raleway-SemiBold';
-    src: url('../../Fonts/ralway/Raleway-SemiBold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Roboto-Black';
-    src: url('../../Fonts/roboto/Roboto-Black.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Roboto-Bold';
-    src: url('../../Fonts/roboto/Roboto-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Roboto-Light';
-    src: url('../../Fonts/roboto/Roboto-Light.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Roboto-Medium';
-    src: url('../../Fonts/roboto/Roboto-Medium.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Roboto-Regular';
-    src: url('../../Fonts/roboto/Roboto-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'SourceSansPro-Black';
-    src: url('../../Fonts/source/SourceSansPro-Black.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'SourceSansPro-Bold';
-    src: url('../../Fonts/source/SourceSansPro-Bold.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'SourceSansPro-Light';
-    src: url('../../Fonts/source/SourceSansPro-Light.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'SourceSansPro-Regular';
-    src: url('../../Fonts/source/SourceSansPro-Regular.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'SourceSansPro-Semibold';
-    src: url('../../Fonts/source/SourceSansPro-Semibold.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'FontsFree-Net-Proxima-Nova-Bold (1)';
-    src: url('../../Fonts/FontsFree-Net-Proxima-Nova-Bold (1).otf') format('opentype');
-}
 /*==================== Font Families Area =====================*/
 /*
     font-family: 'Roboto', sans-serif;
@@ -236,7 +92,6 @@ html, body {
 }
 
 #HOME {
-    background-image: url('../../Images/main-banner.png');
     background-size: cover;
     position: relative;
     padding: 80px 100px 80px 100px;
@@ -433,14 +288,12 @@ html, body {
     background-position: center;
     background-repeat: no-repeat;
     padding: 48px 35px;
-    background-image: url('../../Images/bgs/lip-bg.png');
 }
 
 .skin-bg {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('../../Images/bgs/skin-bg.png');
 }
 
 .breast-bg {
@@ -448,7 +301,6 @@ html, body {
     background-position: center;
     background-repeat: no-repeat;
     padding: 20px 35px 0 35px;
-    background-image: url('../../Images/bgs/breast-bg.png');
 }
 
 .face-bg {
@@ -456,7 +308,6 @@ html, body {
     padding: 78px 35px;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('../../Images/bgs/plastic-surgery.png');
 }
 
 .sur-text {
@@ -573,7 +424,6 @@ html, body {
     background-position: center;
     background-repeat: no-repeat;
     padding: 50px 0px;
-    background-image: url('../../Images/contact-banner.png');
 }
 
 .border-info {
@@ -893,7 +743,7 @@ html, body {
 /*=================== Belo Banner Margins ===================*/
 .Rectangle_5 {
     background-color: rgb(247, 148, 29);
-    height: 5px;
+    height: 7px;
 }
 
 .slick-next:before {
@@ -951,7 +801,6 @@ html, body {
     background-attachment: fixed;
     background-position: center;
     padding: 50px 0;
-    background-image: url('../../Images/contact-info.png');
 }
 
 .info-text {

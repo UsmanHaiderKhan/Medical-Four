@@ -287,7 +287,7 @@ html, body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 48px 35px;
+    padding: 71px 35px;
 }
 
 .skin-bg {
@@ -447,7 +447,7 @@ html, body {
     border-radius: 50%;
     padding: 11px;
     margin-bottom: -30px;
-    margin-left: 45%;
+    margin-left: 50%;
 }
 /*=================== Belo Banner Margins ===================*/
 #after-gallery {
@@ -1857,7 +1857,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     .navbar {
         padding: 0.5rem 1rem;
     }
@@ -2120,7 +2120,7 @@ button:focus {
     /*====== End Calender =====*/
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 415px) {
     /*==== Calender =====*/
     .pignose-calendar {
         font-size: 72%;
@@ -2598,7 +2598,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
     .sleep {
         padding: 0.5rem 1rem;
     }
@@ -2812,7 +2812,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 361px) {
     .sleep {
         padding: 0.5rem 1rem;
     }
@@ -3086,7 +3086,7 @@ button:focus {
     /*====== End Calender =====*/
 }
 
-@media screen and (max-width: 823px) and (orientation: landscape) {
+@media screen and (max-width: 824px) and (orientation: landscape) {
     .media-skin-mt {
         margin-top: 20px;
     }
@@ -3675,7 +3675,7 @@ button:focus {
     /*====== End Calender =====*/
 }
 
-@media screen and (max-width: 731px) and (orientation: landscape) {
+@media screen and (max-width: 732px) and (orientation: landscape) {
     .media-align {
         text-align: center;
     }
@@ -3840,7 +3840,7 @@ button:focus {
     /*====== End Calender =====*/
 }
 
-@media screen and (max-width: 667px) and (orientation: landscape) {
+@media screen and (max-width: 668px) and (orientation: landscape) {
     .media-align {
         text-align: center;
     }
@@ -3931,7 +3931,7 @@ button:focus {
     /*====== End Calender =====*/
 }
 
-@media screen and (max-width: 640px) and (orientation: landscape) {
+@media screen and (max-width: 641px) and (orientation: landscape) {
     .media-align {
         text-align: center;
     }
